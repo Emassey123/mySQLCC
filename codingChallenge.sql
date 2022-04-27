@@ -9,7 +9,7 @@ INSERT INTO book (title, publish_date, author_first_name, author_last_name)
 VALUES ("Jungle Gym", "1997-07-04", "Alfredo", "Gluten"),
 ("Building A Sand Castle", "2023-12-05", "Chris", "Rock");
 -- Query to delete oldest book
-DELETE FROM book eee
+DELETE FROM book 
 WHERE publish_date IS NOT NULL 
 ORDER BY publish_date ASC 
 LIMIT 1;
