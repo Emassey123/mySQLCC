@@ -1,9 +1,9 @@
--------------Very Easy ----------------
+
 -- Query to add two more cars
 INSERT INTO car (make, model, year)
 VALUES ("Tesla", "Model X", 2019),
 ("Dodge", "Charger",2018);
--------------Easy ----------------
+
 - Query to add two new books
 INSERT INTO book (title, publish_date, author_first_name, author_last_name)
 VALUES ("Jungle Gym", "1997-07-04", "Alfredo", "Gluten"),
@@ -16,11 +16,11 @@ LIMIT 1;
  
 -- Query to get the sum of all books in the table
 -- SELECT SUM (id) FROM book;
--------------Medium ----------------
+
 -- Query that pulls all movies in order by release where the title includes an "s"
 SELECT * FROM movie WHERE title like '%s%' ORDER BY release_date ASC;
 
--------------Hard ----------------
+
 -- Query that adds the director to the movies table seperately
 ALTER TABLE movie ADD director_firstName VARCHAR (100),ADD director_lastName VARCHAR (100);
 
@@ -43,7 +43,7 @@ OR director_lastName LIKE '%w'
 OR director_lastName LIKE '%x'
 OR director_lastName LIKE '%y'
 OR director_lastName LIKE '%z';
--------------Very Hard ----------------
+
 -- Query to add prices and color
 UPDATE car
 SET color = "yellow", price = 50000
